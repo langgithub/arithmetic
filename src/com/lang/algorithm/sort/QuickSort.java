@@ -2,6 +2,11 @@ package com.lang.algorithm.sort;
 
 /**
  * Created by root on 2017/9/11.
+ * 基本思想：
+ * 1.找出枢纽
+ * 2.先右后左，找出不符合左小右大的 i,j 交换
+ * 3.i=j 枢纽归为
+ * 4.左递归快排，右递归快排
  */
 public class QuickSort {
 
