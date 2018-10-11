@@ -10,7 +10,7 @@ public class HeapSort {
 
     public void HeapAjust(int[] arr,int start,int end){
         int temp=arr[start];
-        for (int i=2*start+1;i<=end;i*=2){
+        for (int i=2*start+1;i<=end;i=i*2+1){
             if(i<end&&arr[i]<arr[i+1]){
                 i++;
             }
@@ -25,7 +25,7 @@ public class HeapSort {
 
 
     public static void main(String[] args){
-        int[] arr={1, 3, 4, 5, 2, 6, 9, 7, 8, 0,89,45,12};
+        int[] arr={1,4, 5, 3 ,89,45,12};
         HeapSort heapSort=new HeapSort();
         for(int i=arr.length/2;i>=0;i--){
             heapSort.HeapAjust(arr,i,arr.length-1);
